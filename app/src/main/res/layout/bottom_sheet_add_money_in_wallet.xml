@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/bs_add_money"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:behavior_peekHeight="0dp"
+    app:behavior_hideable="true"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:elevation="24dp"
+    android:background="@drawable/payment_by_bg">
+
+    <EditText
+        android:id="@+id/add_money_et"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/colorAccent"
+        android:drawableLeft="@drawable/indianrupee"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="1999/-"
+        android:inputType="numberDecimal"
+        android:maxLength="8"
+        android:textSize="20sp"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/proceed_to_add_btn"
+        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider5" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Add Money"
+        android:textColor="@color/blue_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/proceed_to_add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingHorizontal="16dp"
+        android:text="Proceed to Add"
+        android:enabled="false" android:textAllCaps="false"
+        android:textColor="#70ffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/add_money_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/add_money_et" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:alpha=".08"
+        android:background="@color/dark_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView48" />
+
+    <TextView
+        android:id="@+id/error_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:text=""
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/divider5"
+        app:layout_constraintStart_toStartOf="@+id/divider5"
+        app:layout_constraintTop_toBottomOf="@+id/divider5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

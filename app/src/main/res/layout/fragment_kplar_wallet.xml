@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_color"
+    tools:context=".fragments.KplarWalletFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout7"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/wallet_bg"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView43">
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Current Balance"
+                android:textAlignment="center"
+                android:textColor="@color/dark_black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                app:layout_constraintBottom_toBottomOf="@+id/balance_tv"
+                app:layout_constraintStart_toStartOf="@+id/textView41"
+                app:layout_constraintTop_toTopOf="@+id/balance_tv"
+                app:srcCompat="@drawable/indianrupee" />
+
+            <TextView
+                android:id="@+id/balance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="32dp"
+                android:text="0.00"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView27"
+                app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+            <ImageButton
+                android:id="@+id/add_money_ib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/ic_add" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Money"
+                android:textAlignment="center"
+                android:textColor="@color/blue_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/add_money_ib"
+                app:layout_constraintEnd_toStartOf="@+id/add_money_ib"
+                app:layout_constraintTop_toTopOf="@+id/add_money_ib" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/rubik_medium"
+            android:text="Kplar Wallet"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="16dp"
+            android:capitalize="none"
+            android:text="You can't transfer money of cashback "
+            android:textAlignment="textStart"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout7" />
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:text="Lorem ipsum dolor sit amet,  consetetur sadipscing elitr, sed  diam nonumy eirmod tempor"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Important Points:"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView44"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout7"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Refresh"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:textColor="@color/colorAccent"
+
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout7"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout7" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include layout="@layout/bottom_sheet_add_money_in_wallet" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

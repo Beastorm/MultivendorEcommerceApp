@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_color"
+    tools:context=".activities.OffersActivity">
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="72dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="24dp"
+
+
+        app:layout_constraintStart_toStartOf="@+id/radioGroup"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/unknown_user_icon" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/rubik_regular"
+        android:text=""
+        android:textColor="@color/white_color"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="@+id/imageView16" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="24dp"
+
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="12"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16">
+
+        <RadioButton
+            android:id="@+id/current_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="4"
+            android:background="@drawable/offers_btn_selecters"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Current"
+            android:textAllCaps="false"
+
+
+            />
+
+        <RadioButton
+            android:id="@+id/redeemed_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/offers_btn_selecters"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Redeem"
+            android:textAllCaps="false" />
+
+        <RadioButton
+            android:id="@+id/expired_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="4"
+            android:background="@drawable/offers_btn_selecters"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Expired"
+            android:textAllCaps="false"
+
+            />
+    </RadioGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/offers_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/no_offers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="No Offer Running Currently"
+        android:textColor="@color/white_color"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:elevation="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E8F0FF"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/nav_bg" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+                app:layout_constraintEnd_toEndOf="@+id/imageView6"
+                app:layout_constraintStart_toStartOf="@+id/imageView6"
+                app:layout_constraintTop_toTopOf="@+id/imageView6"
+                app:srcCompat="@drawable/nav_logo" />
+
+            <ImageView
+                android:id="@+id/my_account_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                app:layout_constraintEnd_toStartOf="@+id/offers_zone"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6"
+                app:srcCompat="@drawable/account" />
+
+            <ImageView
+                android:id="@+id/offers_zone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/my_account_iv"
+                app:layout_constraintEnd_toStartOf="@+id/categorybtn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/my_account_iv"
+                app:layout_constraintTop_toTopOf="@+id/my_account_iv"
+                app:srcCompat="@drawable/offers" />
+
+            <ImageView
+                android:id="@+id/categorybtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/offers_zone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/offers_zone"
+                app:layout_constraintTop_toTopOf="@+id/offers_zone"
+                app:srcCompat="@drawable/category" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Account"
+                app:layout_constraintEnd_toEndOf="@+id/my_account_iv"
+                app:layout_constraintStart_toStartOf="@+id/my_account_iv"
+                app:layout_constraintTop_toBottomOf="@+id/my_account_iv" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Offers"
+                app:layout_constraintEnd_toEndOf="@+id/offers_zone"
+                app:layout_constraintStart_toStartOf="@+id/offers_zone"
+                app:layout_constraintTop_toBottomOf="@+id/offers_zone" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Category"
+                app:layout_constraintEnd_toEndOf="@+id/categorybtn"
+                app:layout_constraintStart_toStartOf="@+id/categorybtn"
+                app:layout_constraintTop_toBottomOf="@+id/categorybtn" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="48dp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Refer and Earn 200"
+                    android:textColor="@color/white_color"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/button2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="120dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/colorAccent"
+
+
+                    android:text="KNOW MORE..."
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/kplar_wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageView15"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+                app:srcCompat="@drawable/msf_wallet" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/kplar_wallet"
+                app:layout_constraintEnd_toStartOf="@+id/cart_btn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/kplar_wallet"
+                app:layout_constraintTop_toTopOf="@+id/kplar_wallet"
+                app:srcCompat="@drawable/my_orders" />
+
+            <ImageView
+                android:id="@+id/cart_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageView15"
+                app:layout_constraintTop_toTopOf="@+id/imageView15"
+                app:srcCompat="@drawable/carts" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Kplar Wallet"
+                app:layout_constraintEnd_toEndOf="@+id/kplar_wallet"
+                app:layout_constraintStart_toStartOf="@+id/kplar_wallet"
+                app:layout_constraintTop_toBottomOf="@+id/kplar_wallet" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="My Orders"
+                app:layout_constraintEnd_toEndOf="@+id/imageView15"
+                app:layout_constraintStart_toStartOf="@+id/imageView15"
+                app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Cart"
+                app:layout_constraintEnd_toEndOf="@+id/cart_btn"
+                app:layout_constraintStart_toStartOf="@+id/cart_btn"
+                app:layout_constraintTop_toBottomOf="@+id/cart_btn" />
+
+            <ImageView
+                android:id="@+id/starred_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageView18"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                app:srcCompat="@drawable/starrred" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/starred_btn"
+                app:layout_constraintEnd_toStartOf="@+id/imageView19"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/starred_btn"
+                app:layout_constraintTop_toTopOf="@+id/starred_btn"
+                app:srcCompat="@drawable/become_seller" />
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageView18"
+                app:layout_constraintTop_toTopOf="@+id/imageView18"
+                app:srcCompat="@drawable/help" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Starred"
+                app:layout_constraintEnd_toEndOf="@+id/starred_btn"
+                app:layout_constraintStart_toStartOf="@+id/starred_btn"
+                app:layout_constraintTop_toBottomOf="@+id/starred_btn" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Become Seller"
+                app:layout_constraintEnd_toEndOf="@+id/imageView18"
+                app:layout_constraintStart_toStartOf="@+id/imageView18"
+                app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Help"
+                app:layout_constraintEnd_toEndOf="@+id/imageView19"
+                app:layout_constraintStart_toStartOf="@+id/imageView19"
+                app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+            <Button
+                android:id="@+id/logoutBtn"
+                android:layout_width="120dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/logout_bg"
+                android:text="Log Out"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

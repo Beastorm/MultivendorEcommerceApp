@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rot"
+
+    android:layout_width="match_parent"
+    android:layout_height="260dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="8dp"
+        app:cardCornerRadius="8dp"
+        android:background="@drawable/seller_dialog_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/default_user" />
+
+            <EditText
+                android:id="@+id/review_message"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="#DADADA"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Write Something..."
+                android:inputType="textMultiLine"
+                android:minHeight="120dp"
+                android:padding="6dp"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/submitBtnId"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageView11"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:isIndicator="false"
+                android:rating="3.5"
+                android:scaleX="1.4"
+                android:scaleY="1.4"
+                android:stepSize="0.5"
+                android:theme="@style/MyRatingBar"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+            <TextView
+                android:id="@+id/userReview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textStyle="bold"
+                android:paddingRight="8dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/blue_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+                app:layout_constraintEnd_toStartOf="@+id/ratingBar"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView11"
+                app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+            <Button
+                android:id="@+id/submitBtnId"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/view_btn_bg"
+                android:text="SUBMIT"
+                android:textColor="@color/cardview_dark_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/review_message" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+
+                android:text="Give your review"
+                app:layout_constraintStart_toStartOf="@+id/review_message"
+                app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+            <TextView
+                android:id="@+id/error_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="(At least 16 Characters)"
+                android:textColor="#CACACA"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/review_message"
+                app:layout_constraintTop_toBottomOf="@+id/review_message" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
